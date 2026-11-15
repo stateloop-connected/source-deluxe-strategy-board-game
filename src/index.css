@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Nunito', sans-serif;
+    background-color: #0b1329;
+    color: #ffffff;
+  }
+}
+
+/* 3D Glossy Button Styles */
+.btn-3d-yellow {
+  background: linear-gradient(180deg, #FFE873 0%, #FFC700 40%, #E69D00 100%);
+  border: 3px solid #FFF8C9;
+  box-shadow: 0 8px 0 #A86E00, 0 12px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease;
+}
+.btn-3d-yellow:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px 0 #A86E00, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-cyan {
+  background: linear-gradient(180deg, #A8F0FE 0%, #46D4F8 40%, #15A5CB 100%);
+  border: 3px solid #D6FBFF;
+  box-shadow: 0 8px 0 #0E6C87, 0 12px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease;
+}
+.btn-3d-cyan:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px 0 #0E6C87, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-pink {
+  background: linear-gradient(180deg, #FFA2C2 0%, #FF5A8D 40%, #D4245A 100%);
+  border: 3px solid #FFE2EB;
+  box-shadow: 0 8px 0 #92133B, 0 12px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease;
+}
+.btn-3d-pink:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px 0 #92133B, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-orange {
+  background: linear-gradient(180deg, #FFB973 0%, #FF7B25 40%, #D95400 100%);
+  border: 3px solid #FFE7D1;
+  box-shadow: 0 8px 0 #943700, 0 12px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease;
+}
+.btn-3d-orange:active {
+  transform: translateY(6px);
+  box-shadow: 0 2px 0 #943700, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-green {
+  background: linear-gradient(180deg, #8BF39B 0%, #26C943 40%, #16962D 100%);
+  border: 3px solid #CEFCD5;
+  box-shadow: 0 6px 0 #0C5D1B, 0 10px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.15s ease;
+}
+.btn-3d-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #0C5D1B, 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-3d-blue {
+  background: linear-gradient(180deg, #7DC8FF 0%, #1B86FF 40%, #0056BD 100%);
+  border: 3px solid #CDE9FF;
+  box-shadow: 0 6px 0 #003B82, 0 10px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.15s ease;
+}
+.btn-3d-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #003B82, 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Pawn 3D Animation */
+@keyframes pawn-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.15);
+  }
+}
+
+.animate-pawn-turn {
+  animation: pawn-bounce 0.8s infinite ease-in-out;
+}
+
+/* Dice Rolling Animation */
+@keyframes dice-roll {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(90deg) scale(1.2); }
+  50% { transform: rotate(180deg) scale(0.9); }
+  75% { transform: rotate(270deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-dice-roll {
+  animation: dice-roll 0.45s ease-in-out;
+}
