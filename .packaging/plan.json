@@ -1,0 +1,54 @@
+{
+  "build_script": "vite build",
+  "gameplay_or_asset_changes": false,
+  "google_fonts_selfhost": {
+    "families": [
+      {
+        "family": "Fredoka",
+        "source": "ofl/fredoka/OFL.txt",
+        "spdx": "OFL-1.1"
+      },
+      {
+        "family": "Nunito",
+        "source": "ofl/nunito/OFL.txt",
+        "spdx": "OFL-1.1"
+      }
+    ],
+    "font_files": 8,
+    "fonts_dir": ".packaging/google-fonts",
+    "google_fonts_commit": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
+    "helper": "google-fonts-selfhost.py",
+    "stylesheets": [
+      {
+        "local": ".packaging/google-fonts/e03732ad6791fa18.css",
+        "sha256": "cbac6102941acf7dd92329c83f9eb1fa18d9ded6e76a2c41e347e4e8af04af26",
+        "url": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800;900&display=swap"
+      }
+    ],
+    "total_font_bytes": 180676,
+    "version": 1
+  },
+  "lockfile": "package-lock.json",
+  "mode": "native_source_build",
+  "repository": "lxlnimalxl/deluxe-strategy-board-game",
+  "schema_version": 1,
+  "source_changes": [
+    ".packaging/plan.json",
+    ".packaging/google-fonts/NOTICE.md",
+    ".packaging/google-fonts/e03732ad6791fa18.css",
+    ".packaging/google-fonts/files/0d86eb1801eb104bb3e8.woff2",
+    ".packaging/google-fonts/files/30843913b91f99de14ad.woff2",
+    ".packaging/google-fonts/files/75ab0de1fa44d8f5f819.woff2",
+    ".packaging/google-fonts/files/d4d6f896f429b330a851.woff2",
+    ".packaging/google-fonts/files/e27c36ebbec73d86f6cc.woff2",
+    ".packaging/google-fonts/files/e3bcd326fecf7a42855b.woff2",
+    ".packaging/google-fonts/files/eee3d959d289e915d092.woff2",
+    ".packaging/google-fonts/files/fd8b8aea8febbcde8143.woff2",
+    ".packaging/google-fonts/licenses/Fredoka-OFL-1.1.txt",
+    ".packaging/google-fonts/licenses/Nunito-OFL-1.1.txt",
+    "index.html"
+  ],
+  "status": "ready",
+  "upstream_code_executed_locally": false,
+  "upstream_sha": "fa21cdb5ab985886b4406c6e32cb097b4d7a453b"
+}
